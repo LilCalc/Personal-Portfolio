@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<header>
+    <h1 class="Intro">
+        Hey there! I'm Noah Savino, a web developer eager to get to work!
+    </h1>
+    <nav>
+        <ul>
+            <li>
+            <a href="#Blog">Blog</a>
+            </li>
+            <li>
+                <a href="#Work">Work</a>
+            </li>
+            <li>
+                <a href="#Resume">Resume</a>
+            </li>
+            <li>
+                <a href="#Contact">Contact Me!</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section class="Blog-wrapper" id="blog">
+    <div class="blog-grid-container">
+        <div class="blog-item blog-title">
+            <h2>Here's a little about me!</h2>
+                <div class="blog-item p1">
+                    <p>I'm a web developer eager to get to work and show the world what I've got.</p>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="work" id="work">
+    <div class="work-grid-container">
+        <div class="work-item work-title">
+            <h2>Here's some of the work I've done in the past!</h2>
+        </div>
+        <div onclick="projectClicked('challenge-1-refactor')" alt="Image Displaying the Horiseon landing Page" title="Horiseon landing Page" target="_black" style="cursor: pointer;" class="work-item-project challenge-1-refractor">
+        <span class="span-background">
+            <h3>Horiseon Services</h3>
+            <span class="lower-text">html/css</span>
+        </span>
+        </div>
+        <div onclick="projectClicked('run-buddy')" alt="Image Displaying the RUN BUDDY landing Page" title="RUN BUDDY landing page" style="cursor: pointer;" class="work-item-project run-buddy">
+            <span class="span-background">
+                <h3>Run Buddy</h3>
+                <span class="lower-text">HTML/CSS</span>
+            </span>
+    </div>
+</section>
+<section class="work" id="work">
+    <div class="work-grid-container">
+        <div class="work-item work-title">
+            
+        </div>
+    </div>
+</section>
+<footer>
+    <div id="contact-me" class="footer-wrapper"> 
+        <div class="footer-container"> 
+            <div class="footer-grid-item contact-me"> 
+                Contact Me
+            </div>
+            <div class="footer-grid-item phone">
+                <a href="tel:925-551-1551" class="nav-effects">925-551-1551</a>
+            </div>
+            <div class="footer-grid-item email"> 
+                <a href="mailto:noahsvinois@gmail.com">noahsvinoisatgmail.com</a>
+            </div>
+            <div class="footer-grid-item git-hub"> 
+                <a href="https://github.com/LilCalc/" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script> 
+    function projectClicked(input) { 
+        var input = input; 
+
+        if (input == "challenge-1-refactor") { 
+            window.open("https://lilcalc.github.io/Challenges/Docs/urban-octo-telegram-main/Develop/");
+        } else if (input == "run-buddy") {
+            window.open("https://lilcalc.github.io/run-buddy/");
+        } 
+        {
+            return true; 
+        }
+    };
+        
+</script>
+</body>
+</html>

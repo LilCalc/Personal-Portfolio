@@ -1,0 +1,58 @@
+/* Remove default html margin, padding and assign box-sizinz as border-box to all */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/* Global variable definitions */
+:root {
+    --header-footer-background-color: #000000;
+    --Sunset: rgb(250, 214, 165);
+    --lightgray: lightgray;
+    --about-me-work-border: #333366;
+    --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
+    }
+    
+html {
+    scroll-behavior: smooth;
+}
+  .Intro {
+    display: flex; /* Flex container to display the child elements as flex with space between and wrap */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    background-color: var(--header-footer-background-color); 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:var(--Sunset)
+  }
+  /*Start of header code*/
+  header h1 {
+      padding-left: 50px;
+  }
+  header nav ul{
+    display: flex; /* Flex container to display the child elements as flex with flex-end, wrap, and align the items in center */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-right: 0px;
+  }
+  header nav ul li {
+      font-size: 1.8vw;
+      padding: 10px 15px;
+      margin-top:20px;
+      margin-bottom:10px;
+  }
+  header a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 2px solid var(--Sunset);
+    color: var(--Sunset);
+  }
+  /*End of header code*/
+  body {
+      background-color:var(--header-footer-background-color);
+      color: var(--Sunset);
+  }
