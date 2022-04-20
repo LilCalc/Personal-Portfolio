@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Portfolio</title>
 </head>
 <body>
 <header>
@@ -13,7 +12,7 @@
         Hey there! I'm Noah Savino, a web developer eager to get to work!
     </h1>
     <nav>
-        <ul>
+        <ul class="nav-effects">
             <li>
             <a href="#Blog">Blog</a>
             </li>
@@ -29,43 +28,64 @@
         </ul>
     </nav>
 </header>
-<section class="Blog-wrapper" id="blog">
-    <div class="blog-grid-container">
-        <div class="blog-item blog-title">
-            <h2>Here's a little about me!</h2>
-                <div class="blog-item p1">
-                    <p>I'm a web developer eager to get to work and show the world what I've got.</p>
-                </div>
+
+
+<section class="hero">
+    <div class="hero-subtitle">           
+            <span class="span-background opacity"></span>
+    </div>
+</section>
+<article> 
+    <div id="Blog" class="blog-wrapper"> 
+        <div class="blog-grid-container"> 
+            <div class="blog-item blog-title"> 
+                <p> About me: </p>
+            </div>
+            <div class="blog-item p1">
+                <p>
+                    Hey there strangers!
+                </p>
+            </div>
+            <div class="blog-item p2">
+                <p>
+                    I'm a web developer currently based in KS, I'm currently part of a web development course working to help up and coming web developers enter the field with a solid foundation. I'm well versed in HTML, CSS, and JS. Below you can find my previous work!
+                </p>
+            </div>  
+        </div>
+    </div> 
+</article>
+
+
+<article>
+    <div id="Work" class="work-wrapper"> 
+        <div class="work-grid-container"> 
+            <div class="work-item work-title"> 
+                <p> Work </p>
+            </div>
+            <div onclick="projectClicked('challenge-1-refactor')" alt="Image Displaying the Horiseon landing Page" title="Horiseon landing Page" target="_blank" style="cursor: pointer;" class="work-item-project challenge-1-refactor">
+                <span class="span-background"> 
+                    <h3>Horiseon Services</h3>
+                    <span class="lower-text">HTML/CSS</span> 
+                </span>
+            </div>
+            <div onclick="projectClicked('run-buddy')" alt="Image Displaying the RUN BUDDY landing Page" title="RUN BUDDY landing page" style="cursor: pointer;" class="work-item-project run-buddy">
+                <span class="span-background">
+                    <h3>Run Buddy</h3>
+                    <span class="lower-text">HTML/CSS</span>
+                </span>
+            </div>
+            <div onclick="projectClicked('Code-Quiz')" alt="Image Displaying the Code-Quiz landing page" title="Code Quiz landing page" style="cursor: pointer;" class="work-item-project Code-Quiz">
+                <span class="span-background">
+                    <h3>Code Quiz</h3>
+                    <span class="lower-text">Javascript</span>
+                </span>
             </div>
         </div>
-</section>
-<section class="work" id="work">
-    <div class="work-grid-container">
-        <div class="work-item work-title">
-            <h2>Here's some of the work I've done in the past!</h2>
-        </div>
-        <div onclick="projectClicked('challenge-1-refactor')" alt="Image Displaying the Horiseon landing Page" title="Horiseon landing Page" target="_black" style="cursor: pointer;" class="work-item-project challenge-1-refractor">
-        <span class="span-background">
-            <h3>Horiseon Services</h3>
-            <span class="lower-text">html/css</span>
-        </span>
-        </div>
-        <div onclick="projectClicked('run-buddy')" alt="Image Displaying the RUN BUDDY landing Page" title="RUN BUDDY landing page" style="cursor: pointer;" class="work-item-project run-buddy">
-            <span class="span-background">
-                <h3>Run Buddy</h3>
-                <span class="lower-text">HTML/CSS</span>
-            </span>
     </div>
-</section>
-<section class="work" id="work">
-    <div class="work-grid-container">
-        <div class="work-item work-title">
-            
-        </div>
-    </div>
-</section>
+</article>
+
 <footer>
-    <div id="contact-me" class="footer-wrapper"> 
+    <div id="Contact" class="footer-wrapper"> 
         <div class="footer-container"> 
             <div class="footer-grid-item contact-me"> 
                 Contact Me
@@ -82,6 +102,8 @@
         </div>
     </div>
 </footer>
+
+
 <script> 
     function projectClicked(input) { 
         var input = input; 
@@ -91,6 +113,9 @@
         } else if (input == "run-buddy") {
             window.open("https://lilcalc.github.io/run-buddy/");
         } 
+            else if (input == "Code-Quiz") {
+                window.open("https://lilcalc.github.io/Code-Quiz/");
+            }
         {
             return true; 
         }
