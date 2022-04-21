@@ -6,8 +6,18 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/Images/8100290821645017391-512.png">
     <title>Portfolio</title>
+    <!--Will not work in chrome due to previous rules on Autoplay in the browser, without a workaround this tool will not function-->
+    <script>
+        window.onload = function() {
+          var context = new AudioContext();
+        }
+    </script>
+     <audio autoplay>
+        <source src="./assets/Music/1 Hour ● Chill ● Lofi ● Hiphop 【No Copyright Music】.mp3">
+  </audio>
 </head>
 <body>
+    
 <header>
     <h1 class="Intro">
         Hey there! I'm Noah Savino, a web developer eager to get to work!
@@ -123,5 +133,6 @@
     };
         
 </script>
+ <script src="./assets/js/script.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@
     }
     
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
   .Intro {
     display: flex; /* Flex container to display the child elements as flex with space between and wrap */
