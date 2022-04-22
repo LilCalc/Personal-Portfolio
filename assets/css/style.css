@@ -13,7 +13,6 @@
     --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
     --GoodDay: rgb(135, 206, 146);
     }
-    
 html {
     scroll-behavior:smooth;
 }
@@ -268,3 +267,4 @@ html {
         flex: 1 100%;
         }
     }
+    
