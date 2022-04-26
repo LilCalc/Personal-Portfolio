@@ -18,11 +18,11 @@
 </head>
 <body>
     
-<header>
+<header class="header">
     <h1 class="Intro">
         Hey there! I'm Noah Savino, a web developer eager to get to work!
     </h1>
-    <nav>
+    <nav class="Nav-BG">
         <ul class="nav-effects">
             <li>
             <a href="#Blog">Blog</a>
@@ -31,7 +31,7 @@
                 <a href="#Work">Work</a>
             </li>
             <li>
-                <a href="./Resume.html">Resume</a>
+                <a href="./assets/Images/Resume.pdf">Resume</a>
             </li>
             <li>
                 <a href="#Contact">Contact Me!</a>
@@ -59,7 +59,7 @@
             </div>
             <div class="blog-item p2">
                 <p>
-                    I'm a web developer currently based in KS, I'm currently part of a web development course working to help up and coming web developers enter the field with a solid foundation. I'm well versed in HTML, CSS, and JS. Below you can find my previous work!
+                    I'm a web developer currently based in KS, I'm part of a web development course working to help up and coming web developers enter the field with a solid foundation. I'm well versed in HTML, CSS, and JS. Below you can find my previous work!
                 </p>
             </div>  
         </div>
@@ -88,6 +88,12 @@
             <div onclick="projectClicked('Code-Quiz')" alt="Image Displaying the Code-Quiz landing page" title="Code Quiz landing page" style="cursor: pointer;" class="work-item-project Code-Quiz">
                 <span class="span-background">
                     <h3>Code Quiz</h3>
+                    <span class="lower-text">Javascript</span>
+                </span>
+            </div>
+            <div onclick="projectClicked('Password-Generator')" alt="Image Displaying the Password-Generator landing page" title="Password-Generator landing page" style="cursor: pointer;" class="work-item-project Password-Generator">
+                <span class="span-background">
+                    <h3>Password Generator</h3>
                     <span class="lower-text">Javascript</span>
                 </span>
             </div>
@@ -126,6 +132,9 @@
         } 
             else if (input == "Code-Quiz") {
                 window.open("https://lilcalc.github.io/Code-Quiz/");
+            }
+            else if (input == "Password-Generator") {
+                window.open('https://lilcalc.github.io/Javascript-Password-Generator/');
             }
         {
             return true; 

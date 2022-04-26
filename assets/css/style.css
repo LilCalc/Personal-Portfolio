@@ -6,8 +6,9 @@
   }
 /* Global variable definitions */
 :root {
-    --header-footer-background-color: #2f2f2f;
-    --Sunset: rgb(250, 214, 165);
+    --header-footer-background-color: #4d3227;
+    --Sunset: #cd7700;
+    --RegText: #ebc999;
     --lightgray: lightgray;
     --blog-work-border: #333366;
     --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
@@ -81,16 +82,14 @@ html {
         }
     .hero { /* Here section is a flex container */
         height: 300px;
-        background-image: url("../Images/187171.webp");
+        background-image: url("../Images/285017-fan_art-metalanguage-coffee-festivals-748x421.jpg");
         border-bottom-left-radius: 30px 30px; 
         border-bottom-right-radius: 30px 30px;
-        background-size: cover; 
-        background-attachment: fixed; /* Image scrolls with the page */
-        display: flex;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        flex-direction: row; 
-        align-items: flex-end;
+        border-top-right-radius: 30px 30px;
+        border-top-left-radius:30px 30px;
+        background-size:contain;
+        background-repeat: no-repeat; 
+        background-attachment: fixed; /* Image will scroll with the page */
         }
             
     .hero-subtitle { 
@@ -124,12 +123,14 @@ html {
         }
                 
     .blog-item.p1 {
+        color: var(--RegText);
         padding-left: 10px;
         grid-column: 2 / span 3;
         grid-row: 1 / span 2;
         }
                 
     .blog-item.p2 {
+        color: var(--RegText);
         padding-left: 10px;
         grid-column: 2 / span 3;
         grid-row: 2 / span 2;
@@ -171,8 +172,8 @@ html {
         }
                             
     .work-item-project.run-buddy {
-        grid-column: 2 /span 1;
-        grid-row: 7 / span 3;
+        grid-column: 2 /span 2;
+        grid-row: 7 / span 6;
         background-image: url("../Images/Screen\ Shot\ 2022-04-20\ at\ 1.06.40\ PM.png");
         background-size: cover;
         display: flex; 
@@ -194,6 +195,21 @@ html {
         text-align: left;
         border: .25vw solid var(--rgba-border-color-opacity);
         }
+    .work-item-project.Password-Generator {
+        grid-column: 4 /span 1;
+        grid-row: 7 / span 3;
+        background-image: url("../Images/Screen\ Shot\ 2022-04-26\ at\ 6.44.57\ PM.png");
+        background-size: cover;
+        display: flex; 
+        align-items: flex-end; 
+        padding-left: 0px;
+        padding-bottom: 15px;
+        text-align: left;
+        border: .25vw solid var(--rgba-border-color-opacity);
+        
+        }
+       
+    
     .span-background { 
         background-color: var(--sunset);
         position: relative;
