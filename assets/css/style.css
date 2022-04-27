@@ -70,9 +70,9 @@ html {
       font-weight: bold;
   }
   .nav-effects a:hover{
-      color: var(--sunset);
+      color: var(--Sunset);
       font-weight: bold;
-      text-shadow: 0px 0px 20px var(--sunset);
+      text-shadow: 0px 0px 20px var(--Sunset);
   }
     
     .footer-container a:hover{
@@ -149,10 +149,6 @@ html {
         grid-template-rows: repeat(10, 1fr);
         gap: 10px 10px; 
         }
-    .work-wrapper a:hover {
-        color: var(--Sunset);
-        box-shadow: 0px 0px 20px var(--Sunset);
-    }
     .work-item.work-title {
         padding-top: 10px;
         font-size: 35px;
