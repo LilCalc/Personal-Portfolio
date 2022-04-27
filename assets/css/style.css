@@ -119,7 +119,7 @@ html {
         grid-row: 1 / span 2;
         padding-right: 10px;
         text-align: right;
-        border-right: 2px solid var(--blog-work-border);
+        border-right: 2px solid var(--Sunset);
         }
                 
     .blog-item.p1 {
@@ -149,13 +149,17 @@ html {
         grid-template-rows: repeat(10, 1fr);
         gap: 10px 10px; 
         }
+    .work-wrapper a:hover {
+        color: var(--Sunset);
+        box-shadow: 0px 0px 20px var(--Sunset);
+    }
     .work-item.work-title {
         padding-top: 10px;
         font-size: 35px;
         grid-row: 1 / span 9;
         text-align: right;
         padding-right: 10px;
-        border-right: 2px solid var(--blog-work-border);
+        border-right: 2px solid var(--Sunset);
         }
                             
     .work-item-project.challenge-1-refactor { /* Grid cells with embedded images */
@@ -168,8 +172,9 @@ html {
         padding-left: 0px;
         padding-bottom: 15px;
         text-align: left;
-        border: .25vw solid var(--rgba-border-color-opacity);
+        border: .25vw solid var(--RegText);
         }
+    
                             
     .work-item-project.run-buddy {
         grid-column: 2 /span 2;
@@ -181,7 +186,7 @@ html {
         padding-left: 0px;
         padding-bottom: 15px;
         text-align: left;
-        border: .25vw solid var(--rgba-border-color-opacity);
+        border: .25vw solid var(--RegText);
         }
     .work-item-project.Code-Quiz {
         grid-column: 4 /span 1;
@@ -193,7 +198,7 @@ html {
         padding-left: 0px;
         padding-bottom: 15px;
         text-align: left;
-        border: .25vw solid var(--rgba-border-color-opacity);
+        border: .25vw solid var(--RegText);
         }
     .work-item-project.Password-Generator {
         grid-column: 4 /span 1;
@@ -205,7 +210,7 @@ html {
         padding-left: 0px;
         padding-bottom: 15px;
         text-align: left;
-        border: .25vw solid var(--rgba-border-color-opacity);
+        border: .25vw solid var(--RegText);
         
         }
        
@@ -264,7 +269,7 @@ html {
         grid-row: 1 / span 3;
         text-align: right;
         padding-right: 10px;
-        border-right: 2px solid var(--blog-work-border);
+        border-right: 2px solid var(--Sunset);
         }
                                 
     .footer-grid-item.phone{
